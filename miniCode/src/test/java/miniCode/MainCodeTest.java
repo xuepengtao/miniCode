@@ -10,7 +10,7 @@ public class MainCodeTest {
     @Test
     public void demo() {
         //构建数据
-        String[] input = {"2", "0", "9", "7"};
+        String[] input = {"23", "25"};
         MainCode mainCode = new MainCode();
         //调用方法
         List<String> outPut = mainCode.testDemo(input);
