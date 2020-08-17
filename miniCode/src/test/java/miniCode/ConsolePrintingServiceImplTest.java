@@ -2,6 +2,7 @@ package miniCode;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.mockito.Mock;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -27,6 +28,7 @@ public class ConsolePrintingServiceImplTest {
     public void testGetWordsByNum() {
         char c = '3';
         String wordStr = psl.getWordByCharNum(c);
+        assert(wordStr != null&& !"".equals(wordStr));
         System.out.println("wordStr: " + wordStr);
     }
 

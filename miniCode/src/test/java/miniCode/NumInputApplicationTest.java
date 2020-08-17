@@ -6,6 +6,7 @@ import java.util.TimerTask;
 
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
+import org.omg.CORBA.Any;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -28,5 +29,10 @@ class NumInputApplicationTest {
             }
         }, 0L, 1000L);
         // timer.cancel();  // 关闭计时器
+    }
+    @Test
+    void test(){
+       String[] args = {"1","2"};
+       NumInputApplication.main(args);
     }
 }

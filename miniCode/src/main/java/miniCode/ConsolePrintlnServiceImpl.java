@@ -46,13 +46,13 @@ public class ConsolePrintlnServiceImpl extends ApplicationEvent {
 
         });
         cs.listenInNewThread();
-        while (true) {
-            try {
-                Thread.sleep(1);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
+//        while (true) {
+//            try {
+//                Thread.sleep(1);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        }
     }
 
     /**
